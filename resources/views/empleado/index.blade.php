@@ -14,10 +14,11 @@
     <thead class="thead-light">
         <tr>
             <th>#</th>
-            <th>Nombre Real</th>
-            <th>Nombre super</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
             <th>Foto</th>
-            <th>Informacion</th>
+            <th>precio</th>
+            <th>cantidad</th>
             <th>Acciones</th>
             
         </tr>
@@ -28,8 +29,8 @@
         @foreach($empleados as $empleado)
         <tr>
             <td>{{ $empleado->id }}</td>
-            <td>{{ $empleado->NombreReal }}</td>
-            <td>{{ $empleado->NombreSuper }}</td>
+            <td>{{ $empleado->Nombre}}</td>
+            <td>{{ $empleado->Descripcion }}</td>
             <td>
                 <img class="img-thumbnail img-fluid" src="{{asset('storage').'/'.$empleado->FOTO}}" with="100" akt="">
                 

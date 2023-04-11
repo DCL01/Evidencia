@@ -1,14 +1,14 @@
 
 <div class="form-group">
 
-<label for="NombreReal"> NombreReal </label>
-<input type="text" class="form-control" name="NombreReal" value="{{ isset($empleado->NombreReal)?$empleado->NombreReal:''}}" id="NombreReal">
+<label for="Nombre"> Nombre </label>
+<input type="text" class="form-control" name="Nombre" value="{{ isset($empleado->NombreReal)?$empleado->Nombre:''}}" id="Nombre">
 <br>
 </div>
 
 <div class="form-group">
-<label for="NombreSuper"> NombreSuper </label>
-<input type="text" class="form-control" name="NombreSuper" value="{{ isset($empleado->NombreSuper)?$empleado->NombreSuper:''}}" id="NombreSuper">
+<label for="Descripcion"> NombreSuper </label>
+<input type="text" class="form-control" name="Descripcion" value="{{ isset($empleado->Descripcion)?$empleado->Descripcion:''}}" id="Descripcion">
 <br>
 </div>
 
@@ -20,8 +20,14 @@
 <br>
 
 <div class="form-group">
-<label for="Informacion"> Informacion </label>
-<input type="text"class="form-control" name="Informacion" value="{{isset($empleado->Informacion)?$empleado->Informacion:''}}" id="Informacion">
+<label for="precio"> Informacion </label>
+<input type="text"class="form-control" name="precio" value="{{isset($empleado->precio)?$empleado->precio:''}}" id="precio">
+<br>
+</div>
+
+<div class="form-group">
+<label for="cantidad"> Informacion </label>
+<input type="text"class="form-control" name="cantidad" value="{{isset($empleado->cantidad)?$empleado->cantidad:''}}" id="cantidad">
 <br>
 </div>
 
